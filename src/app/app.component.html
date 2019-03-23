@@ -1,8 +1,12 @@
-<h1>Restaurante OTTO</h1>
-
-<lista-productos titulo="Platos principales" [productos]="arrProdComida" (productoSeleccionado)="agregarPedido($event)"></lista-productos>
-<lista-productos titulo="Bebida" [productos]="arrProdBebida" (productoSeleccionado)="agregarPedido($event)"></lista-productos>
-
-<pedido [listaPedido]="pedido"></pedido>
-<total [precioTotal]="total"></total>
+<div class="container-fluid">
+    <h1>Restaurante OTTO</h1>
+    <div class="comida">
+        <lista-productos titulo="Platos principales" [productos]="arrProdComida" (productoSeleccionado)="agregarPedido($event)"></lista-productos>
+        <lista-productos titulo="Bebida" [productos]="arrProdBebida" (productoSeleccionado)="agregarPedido($event)"></lista-productos>
+    </div>
+    <div class="pedido">
+        <pedido [listaPedido]="pedido"></pedido>
+        <total [precioTotal]="total"></total>
+    </div>
+</div>
 
