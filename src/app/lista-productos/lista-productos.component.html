@@ -1,0 +1,8 @@
+<div class="row">
+	<h3>{{titulo}}</h3>
+	<div *ngFor="let prod of productos" class="botonProducto col-lg-3" (click)="agregarArticulo(prod)">
+		<p class="nombre">{{prod.nombre}}</p>
+		<p class="precio">{{prod.precio}} €</p>
+		<img [src]="prod.imagen">
+	</div>
+</div>

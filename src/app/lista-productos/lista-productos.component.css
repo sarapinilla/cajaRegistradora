@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+
+h3{
+	font-size: 30px;
+	display: block;
+	height: 0 auto;
+	width: 100%; 
+}
+
+.row:after{
+    clear:both;
+    height: 0;
+    content: "";
+    display: block;
+}
+
+
+div .botonProducto{
+	width: 260px;
+	height: 260px;
+	background-color: lightblue;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px 20px;
+	margin: 8px;
+	float: left;
+}
+
+.nombre{
+	font-size: 1.3em;
+}
+
+.precio{
+	font-size: 1em;
+}
+
+div .botonProducto img{
+	float: right;
+	width: 60%;
+	border: 2px solid black;
+	border-radius: 15px;
+	box-shadow: 8px 8px 0 #fafafa;
+	cursor: pointer;
+}
+
